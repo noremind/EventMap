@@ -1,0 +1,18 @@
+@use "../abstracts" as abs;
+
+.btn{
+	border: 2px solid abs.$accent-color;
+	padding: 6px 12px;
+	border-radius: 10px;
+	color: abs.$main-color;
+
+	&--active{
+		background-color: abs.$accent-color;
+		color: abs.$white-color;
+
+		-webkit-box-shadow: 2px 6px 21px 0px rgba(88, 76, 244, 0.2);
+		-moz-box-shadow: 2px 6px 21px 0px rgba(88, 76, 244, 0.2);
+		box-shadow: 2px 6px 21px 0px rgba(88, 76, 244, 0.2);
+	}
+}
+
