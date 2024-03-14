@@ -8,11 +8,10 @@
     "client:scss": "cd client && npm run scss",
 		"client:build": "cd client && npm run build",
 
-		"preview": "concurrently \"cd client && npm run preview\"",
-
 		"server:dev": "cd server && npm run dev",
 
-    "dev": "concurrently \"npm run client:dev\" \"npm run client:scss\" "
+		"preview": "concurrently \"cd client && npm run preview\" \"npm run server:dev\"",
+    "dev": "concurrently \"npm run client:dev\" \"npm run client:scss\" \"npm run server:dev\" "
   },
   "keywords": [],
   "author": "",
